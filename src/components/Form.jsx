@@ -22,7 +22,7 @@ export default function FormSection() {
 
     try {
       const res = await fetch(
-        "https://script.google.com/macros/s/AKfycbwfM4tCsxiFcgrQfAJDiRShkRHhRRSauC_SWrvoR39wIZ60WOlAJRjSqnMHVM1j7d-BJw/exec",
+        "https://script.google.com/macros/s/AKfycbzvEnwSbaVuLnys2P1FmnjMzVdbkVMPTgJNPOO0hDMBhky45S25BY2nPwca3SEBZ_aHXQ/exec",
         {
           method: "POST",
           headers: {
