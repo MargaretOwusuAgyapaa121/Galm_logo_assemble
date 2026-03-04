@@ -118,6 +118,7 @@ export default function FormSection() {
           <input
             name="birthday"
             type="date"
+            placeholder="Date of birth"
             required
             onChange={handleChange}
             value={formData.birthday}
