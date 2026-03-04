@@ -1,16 +1,29 @@
-/* HERO */
+/* ===== GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+/* ===== HERO ===== */
 .hero {
   position: relative;
   height: 100vh;
   background: url("../assets/img/bg.jpg") right center/cover no-repeat;
   display: flex;
   align-items: center;
-  justify-content: flex-start;   /* shift content left */
+  justify-content: flex-start;
   padding: 0 8%;
   text-align: left;
 }
 
-/* darker gradient from left fading to image */
 .hero-overlay {
   position: absolute;
   inset: 0;
@@ -34,12 +47,8 @@
   width: 110px;
   margin-bottom: 35px;
   display: block;
-
-  /* Elegant effect */
   filter: drop-shadow(0 8px 25px rgba(0, 0, 0, 0.6));
   opacity: 0.95;
-
-  /* Smooth entrance feel */
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
@@ -81,19 +90,15 @@
   transform: translateY(-3px);
 }
 
-
-
-/* MOTIVATION — Black Executive Version */
-
+/* ===== MOTIVATION ===== */
 .motivation {
   position: relative;
   padding: 100px 10px;
-  background: #000; /* true black */
+  background: #000;
   text-align: center;
   overflow: hidden;
 }
 
-/* subtle gold glow accent */
 .motivation::before {
   content: "";
   position: absolute;
@@ -114,7 +119,6 @@
   z-index: 2;
 }
 
-/* HEADING */
 .motivation h2 {
   font-size: 3rem;
   font-weight: 600;
@@ -124,7 +128,6 @@
   text-transform: uppercase;
 }
 
-/* Gold accent line */
 .motivation h2::after {
   content: "";
   display: block;
@@ -134,7 +137,6 @@
   margin: 25px auto 0;
 }
 
-/* TEXT */
 .motivation p {
   font-size: 1.3rem;
   line-height: 1.9;
@@ -143,15 +145,13 @@
   font-weight: 300;
 }
 
-/* First paragraph stronger */
 .motivation p:first-of-type {
   font-size: 1.5rem;
   font-weight: 500;
   color: #ffffff;
 }
 
-/* FORM SECTION — 2026 DREAMY BLACK */
-
+/* ===== FORM SECTION ===== */
 .form-section {
   position: relative;
   padding: 50px 10px;
@@ -161,7 +161,6 @@
   overflow: hidden;
 }
 
-/* subtle dreamy gradient glow behind form */
 .form-section::before {
   content: "";
   position: absolute;
@@ -211,13 +210,16 @@ input {
   background: #1f2937;
   color: #fff;
   font-size: 1rem;
+  width: 100%; /* full width */
+  box-sizing: border-box;
 }
 
 /* Checkbox Group */
 .checkbox-group {
-  display: inline-block;
+  display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap; /* wrap on small screens */
   color: #cbd5e1;
 }
 
@@ -252,4 +254,50 @@ button[type="submit"]:hover {
   font-weight: 500;
   box-shadow: 0 10px 30px rgba(0,0,0,0.7);
   color: #fff;
+}
+
+/* ===== RESPONSIVE FIXES ===== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+  .motivation h2 {
+    font-size: 2rem;
+  }
+  .motivation p {
+    font-size: 1rem;
+  }
+  .form-section h2 {
+    font-size: 2rem;
+  }
+  form {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 0 5%;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .checkbox-group {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  input {
+    font-size: 0.95rem;
+  }
+  button[type="submit"] {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
 }
