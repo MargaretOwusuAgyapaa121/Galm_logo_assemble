@@ -32,10 +32,9 @@ export default function Hero() {
 
       <div className="hero-content">
         <img src="/assets/img/icon4.png" alt="Church Logo" className="hero-logo" />
-        <h1 className="main-title">
-          <span className="line1">Glorious Anchor of Life</span>
-          <span className="line2">  -  Logos Assembly</span>
-        </h1>
+       <h1 className="main-title">
+  Glorious Anchor of Life <span className="line2">- Logos Assembly</span>
+</h1>
 
         <p>
           Anchored in Purpose. Elevated in Grace. 

@@ -56,24 +56,27 @@ body {
   transform: scale(1.05);
   opacity: 1;
 }
-.line1{
+/* Main title */
+.main-title {
   font-size: 3.5rem;
   font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 1px;
   color: #cbd5e1;
-  text-align: center;
-  white-space: normal; /* allow wrapping */
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2;
+  text-align: left; /* or center if you want */
+  white-space: normal; /* allows wrapping on smaller screens */
 }
 
- .line2 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: 100;
-  letter-spacing: 10px;
-  color: #ccdcf0;
-  text-align: center;
-  white-space: normal; /* allow wrapping */
+/* The "- Logos Assembly" part */
+.main-title .line2 {
+  color: #d4af37; /* golden accent */
+  font-weight: 200; /* lighter than main title */
+  font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 3px;
+  margin-left: 8px; /* small spacing after "Life" */
+  text-transform: uppercase; /* optional for style */
 }
+
 
 
 .hero p {
