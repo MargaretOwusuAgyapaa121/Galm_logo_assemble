@@ -70,7 +70,7 @@ body {
 /* The "- Logos Assembly" part */
 .main-title .line2 {
   color: #d4af37; /* golden accent */
-  font-weight: 200; /* lighter than main title */
+  font-weight: 400; /* lighter than main title */
   font-family: 'Trebuchet MS', 'Lucida Sans', Arial, sans-serif;
   letter-spacing: 3px;
   margin-left: 8px; /* small spacing after "Life" */
