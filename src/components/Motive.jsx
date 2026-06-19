@@ -5,12 +5,18 @@ export default function Motivation() {
         <h2>Your Journey Matters</h2>
 
         <p>
-          You are not here by accident. Every step of your journey has prepared you for this moment. You are chosen, called, and appointed for a purpose greater than you can imagine. Embrace your destiny with courage and faith, for the gifts within you are meant to shine and impact the world. Remember, even in challenges, your calling remains steadfast  keep moving forward, and let your light inspire others.
+          Welcome to our church family! We’re glad you’ve joined us and look forward to growing together in faith. Our community is here to support and encourage you on your spiritual journey.
+        </p>
+        <p>
+          Remember, you are valued and loved. We pray you find warmth, friendship, and inspiration as you start this new chapter with us.
         </p>
 
         <p>
-          This is your season to rise, to grow, and to walk boldly
-          into the stage prepared for you.
+          We want to walk with you in the journey of our Lord and master Jesus Christ. Blessings!
+
+        </p>
+         <p>
+         Help us to fill in your particulars and indicate how you would like to be contacted
         </p>
       </div>
     </section>
