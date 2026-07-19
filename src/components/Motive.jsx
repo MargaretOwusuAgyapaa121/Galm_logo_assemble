@@ -15,7 +15,6 @@ export default function Motivation() {
         <p>
           We want to walk with you in the journey of our Lord and master Jesus Christ. Blessings!
         </p>
-        
          <p>
          Help us to fill in your particulars and indicate how you would like to be contacted
         </p>
